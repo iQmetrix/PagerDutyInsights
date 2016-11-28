@@ -89,7 +89,7 @@ if ($insightsEvents)
     Write-Output "Submitting events to Insights"
     $insightsInvokeRestMethodArgs = @{
         ContentType = 'application/json'
-        Headers = @{ "X-Insert-Key" = $env:APPSETTING_INSIGHTS_KEY }
+        Headers = @{ "X-Insert-Key" = $env:APPSETTING_INSIGHTS_INSERT_KEY }
         Uri = "https://insights-collector.newrelic.com/v1/accounts/$($env:APPSETTING_INSIGHTS_ACCOUNT)/events"
         Method = 'Post'
         Body = $insightsEvents | ConvertTo-Json
