@@ -52,6 +52,6 @@ SELECT count(*) as 'Escalations' from PagerDutyIncident where escalations > 0 si
 ```
 
 # Credits
-This project was inspired by [a similar script authored by the New Relic team](insights-about-pagerduty). Check it out for more NRQL queries and ideas.
+This project was inspired by [a similar script authored by the New Relic team][insights-about-pagerduty]. Check it out for more NRQL queries and ideas.
 
 [insights-about-pagerduty]: https://github.com/newrelic/insights-about-pagerduty
